@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# v1 2011-08-14
+# Ceci est un autre commentaire
+index.html
+404.html
+.htacces
+/img
+/css
+/js
+
+
+# L'utilise depuis le network (réseau) si il est disponible
+NETWORK:
+envoi.php
