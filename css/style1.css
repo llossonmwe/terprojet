@@ -14,7 +14,7 @@
     border-style: solid;
     max-width: 450px;
     background-color: rgba(25,28,33,.8);
-    color: #937341;
+    color: white;
     cursor: pointer;
     font-size: 14px;
     letter-spacing: 2px;
@@ -299,6 +299,68 @@ div .img11{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+  font-size: 13px;
+}
+input:checked +br+ label {
+  display: inline-block;
+}
+
+/* début des radio ici */
+
+label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 15px;
+	font-size: 13px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+	display: none;
+}
+label:before {
+	content: "";
+	display: inline-block;
+
+	width: 16px;
+	height: 16px;
+
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #aaa;
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.radio label:before {
+	border-radius: 8px;
+}
+.checkbox label {
+	margin-bottom: 10px;
+}
+.checkbox label:before {
+    border-radius: 3px;
+}
+
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #f3f3f3;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+/* fin ici */
+
 @-webkit-keyframes cloud {
   from {
     -webkit-transform: translateX(0);
